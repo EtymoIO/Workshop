@@ -1,6 +1,6 @@
 # Etymo Workshop
 
-You can download 10000 processed papers and their keywords at 
+You can download 10000 processed papers and their keywords at
 [this github repo](https://github.com/EtymoIO/OpenData) or by typing:
 ```sh
 git clone git@github.com:EtymoIO/OpenData.git
@@ -31,6 +31,8 @@ Main problems:
 
 ### tesseract
 
+### Pypdf2
+
 
 How to download a bundle of text conversions.
 
@@ -41,7 +43,10 @@ Overview of main methods
 ### RAKE
 
 ### TF-IDF
-Con: extracts keywords not keyphrases.
+
+### Graph Theory approach
+
+
 
 ## Institution extraction
 
