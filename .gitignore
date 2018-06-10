@@ -2,6 +2,8 @@
 OpenData
 .ipynb_checkpoints
 *.pdf
+*.txt
+*.jpg
 
 ### TeX gitignore
 
