@@ -1,5 +1,6 @@
 \documentclass{beamer}
 \usepackage{lmodern}
+\beamertemplatenavigationsymbolsempty
 
 \title{SIAM-IMA Etymo workshop - keyword extraction}
 \author{Steven Elsworth}
@@ -10,25 +11,69 @@
 
 \begin{frame}
  \frametitle{\centerline{Keyword extraction}}
-Overview of problem, given txt, find keywords
+\begin{figure}[h]
+\centering
+\begin{minipage}{0.45\textwidth}
+\centering
+\includegraphics[width=0.7\textwidth]{img/txt}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+\centering
+\includegraphics[width=1.2\textwidth]{img/keywords}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[h]
+\begin{minipage}{0.45\textwidth}
+\centering
+Example text
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+\centering
+List of keywords
+\end{minipage}
+\end{figure}
 \end{frame}
 
 \begin{frame}
 \frametitle{Previous Approaches}
 \begin{itemize}
 \item Machine Learning
+\vspace{0.5in}
 \item TFIDF
+\vspace{0.5in}
 \item RAKE
+\vspace{0.5in}
 \item Graph Based Approaches
 \end{itemize}
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Machine Learning}
+
+
 \end{frame}
 
 \begin{frame}
 \frametitle{TFIDF: Term Frequency, Inverse Document Frequency}
+\includegraphics[width= \textwidth]{img/tfidf}
+\vspace{0.5cm}
+Published in 1972, led to TF-IDF .
+\vspace{0.5cm}
+\[
+TF(t) = \frac{\text{Number of times term t appears in a document}}{\text{Total number of terms in the document}}
+\]
+\[
+IDF(t) = \log \left( \frac{\text{Total number of documents}}{{\text{Number of documents containing term t}}} \right).
+\]
+\[
+Value = TF * IDF
+\]
+\end{frame}
+
+\begin{frame}
+\frametitle{TFIDF Example}
 \end{frame}
 
 \begin{frame}
