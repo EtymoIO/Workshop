@@ -46,12 +46,20 @@ List of keywords
 \vspace{0.5in}
 \item Graph Based Approaches
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}
 \frametitle{Machine Learning}
+We do not have the training data. We need pairs:
 
+\vspace{0.2in}
+\textbf{Title:} Compatibility of systems of linear constraints over the set of natural numbers
+
+\textbf{Abstract:} Criteria of compatibility of a system of linear Diophantine equations, strict inequations, and nonstrict inequations are considered. Upper bounds for components of a minimal set of solutions and algorithms of construction of minimal generating sets of solutions for all types of systems are given. These criteria and the corresponding algorithms for constructing a minimal supporting set of solutions can be used in solving all the considered types of systems and systems of mixed types.
+
+
+\textbf{Manually assigned keywords:}
+linear constraints, set of natural numbers, linear Diophantine equations, strict inequations, nonstrict inequations, upper bounds, minimal generating sets
 
 \end{frame}
 
@@ -74,6 +82,19 @@ Value = TF * IDF
 
 \begin{frame}
 \frametitle{TFIDF Example}
+\url{http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html}
+
+\vspace{0.1in}
+\begin{itemize}
+\item lowercase
+\item stopwords
+\item n-gram range 
+\item idf (smoothing)
+\item document frequency range
+\end{itemize}
+
+'systems' : $\frac{4}{\log (1)}$, , 'solutions' : $\frac{4}{\log (1)}$, 'minimal' : $\frac{4}{\log (1)}$, 'types' : $\frac{4}{\log (1)}$, 'considered' : $\frac{3}{\log (1)}$, 'set', : $\frac{3}{\log (1)}$, 'set solutions' : $\frac{3}{\log (1)}$, ...
+
 \end{frame}
 
 \begin{frame}
@@ -89,7 +110,7 @@ Value = TF * IDF
 \begin{frame}
 \frametitle{RAKE Example}
 \begin{itemize}
-\item \textbf{Document:} \color{red} what example should we use? \color{black}
+\item \textbf{Document:} 'A matrix is a rectangular array of numbers, symbols, or expressions, arranged in rows and columns.'
 \vspace{0.3cm}
 \item \textbf{Stop words:} Fox, Christopher. "A stop list for general text." ACM SIGIR Forum. Vol. 24. No. 1-2. ACM, 1989.
 \vspace{0.3cm}
@@ -103,13 +124,37 @@ Example = ' a, about, above, across, after, again, against, all, almost, alone, 
 \begin{frame}
 \frametitle{RAKE: Extracted Keywords}
 
-list extracted keywords
+\url{https://github.com/zelandiya/RAKE-tutorial}
 
-explain scorings
+\vspace{0.1in}
+compatibility, systems, linear constraints, set, natural numbers, criteria, compatibility, system, linear diophantine equations, strict inequations, nonstrict inequations, upper bounds, components, minimal set, solutions, algorithms, minimal generating sets, solutions, systems, criteria, corresponding algorithms, constructing, minimal supporting set, solving, systems, systems
+\pause
+\[
+\text{score} = \frac{\texttt{deg}(w)}{\texttt{freq}(w)}
+\]
+\pause
+minimal generating sets (8.7), linear diophantine equations (8.5), minimal supporting set (7.7), minimal set (4.7), linear constraints (4.5), natural numbers (4), strict inequations (4), nonstrict inequations (4), upper bounds (4), corresponding algorithms (3.5), set (2), algorithms (1.5), compatibility (1), systems (1), criteria (1), system (1), components (1),constructing (1), solving (1)
+\vspace{1in}
+
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Graph Based Approach}
+
+\url{https://github.com/davidadamojr/TextRank}
+
+\vspace{0.1in}
+
+\includegraphics[width= 0.4\textwidth]{img/graph}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Literature Review}
+\includegraphics[width= 1\textwidth]{img/lit_review}
+\vspace{0.2in}
+\includegraphics[width= 1\textwidth]{img/lit_review2}
 \end{frame}
 
 \end{document}
