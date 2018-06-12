@@ -6,6 +6,8 @@ OpenData
 *.pdf
 *.txt
 *.jpg
+!ipython_files/example.txt
+!ipython_files/data/example1.pdf
 
 ### TeX gitignore
 

@@ -134,19 +134,37 @@ compatibility, systems, linear constraints, set, natural numbers, criteria, comp
 \]
 \pause
 minimal generating sets (8.7), linear diophantine equations (8.5), minimal supporting set (7.7), minimal set (4.7), linear constraints (4.5), natural numbers (4), strict inequations (4), nonstrict inequations (4), upper bounds (4), corresponding algorithms (3.5), set (2), algorithms (1.5), compatibility (1), systems (1), criteria (1), system (1), components (1),constructing (1), solving (1)
-\vspace{1in}
-
-
 \end{frame}
 
 \begin{frame}
 \frametitle{Graph Based Approach}
+\includegraphics[width= \textwidth]{img/textrank}
+
+\begin{enumerate}
+\item Identify text units that best define the task at hand, and add them as vertices in the graph.
+\item Identify relations that connect such text units, and use these relations to draw edges between vertices in the graph. Edges can be directed or undirected, weighted or unweighted.
+\item Iterate the graph-based ranking algorithm until convergence.
+\item Sort vertices based on their final score. Use the values attached to each vertex for ranking/selection decisions.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Graph Based Approach Example}
 
 \url{https://github.com/davidadamojr/TextRank}
 
 \vspace{0.1in}
 
-\includegraphics[width= 0.4\textwidth]{img/graph}
+Construct co-occurrence relation, two vertices are connected if the words appear within a window of maximum words, where can be set anywhere from 2 to 10 words.
+\begin{center}
+\includegraphics[scale = 0.3]{img/graph}
+\end{center}
+Apply iterative ranking algorithm:
+
+numbers (1.46), inequations (1.45), linear (1.29), diophantine (1.28), upper (0.99), bounds (0.99), strict (0.77), ....
+
+\vspace{0.1in}
+Apply collapsing of keywords to form keyphrases.
 \end{frame}
 
 
