@@ -9,6 +9,8 @@ OpenData
 !ipython_files/example.txt
 !ipython_files/data/example1.pdf
 !intro_talk/intro.pdf
+!keyword_extraction_talk/keyword_extraction.pdf
+!text_extraction_talk/text_extraction.pdf
 
 ### TeX gitignore
 

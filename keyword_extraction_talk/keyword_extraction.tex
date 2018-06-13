@@ -2,7 +2,7 @@
 \usepackage{lmodern}
 \beamertemplatenavigationsymbolsempty
 
-\title{SIAM-IMA Etymo workshop - keyword extraction}
+\title{SIAM-IMA Etymo workshop - Keyword Extraction}
 \author{Steven Elsworth}
 \date{June 13, 2018}
 
@@ -10,7 +10,7 @@
 \maketitle
 
 \begin{frame}
- \frametitle{\centerline{Keyword extraction}}
+ \frametitle{\centerline{Keyword Extraction}}
 \begin{figure}[h]
 \centering
 \begin{minipage}{0.45\textwidth}
@@ -36,30 +36,44 @@ List of keywords
 \end{frame}
 
 \begin{frame}
-\frametitle{Previous Approaches}
-\begin{itemize}
-\item Machine Learning
-\vspace{0.5in}
-\item TFIDF
-\vspace{0.5in}
-\item RAKE
-\vspace{0.5in}
-\item Graph Based Approaches
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Machine Learning}
-We do not have the training data. We need pairs:
-
-\vspace{0.2in}
+\frametitle{Example Data}
 \textbf{Title:} Compatibility of systems of linear constraints over the set of natural numbers
+\vspace{0.1in}
 
 \textbf{Abstract:} Criteria of compatibility of a system of linear Diophantine equations, strict inequations, and nonstrict inequations are considered. Upper bounds for components of a minimal set of solutions and algorithms of construction of minimal generating sets of solutions for all types of systems are given. These criteria and the corresponding algorithms for constructing a minimal supporting set of solutions can be used in solving all the considered types of systems and systems of mixed types.
 
-
 \textbf{Manually assigned keywords:}
 linear constraints, set of natural numbers, linear Diophantine equations, strict inequations, nonstrict inequations, upper bounds, minimal generating sets
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Previous Approaches}
+%\begin{itemize}
+%\item Machine Learning
+%\vspace{0.5in}
+%\item TFIDF
+%\vspace{0.5in}
+%\item RAKE
+%\vspace{0.5in}
+%\item Graph Based Approaches
+%\end{itemize}
+%\end{frame}
+
+\begin{frame}
+\frametitle{Neural nets}
+We do not have the training data. 
+
+\vspace{0.2in}
+
+\begin{itemize}
+\item \url{https://www.worldcat.org}
+
+\item \url{https://www.sciencedirect.com/science/article/pii/S0957417417308473}
+
+\item \url{https://www.worldscientific.com/doi/abs/10.1142/S0218213004001466}
+
+\item \url{https://epubs.siam.org/doi/abs/10.1137/17M1119901}
+\end{itemize}
 
 \end{frame}
 
@@ -93,7 +107,7 @@ Value = TF * IDF
 \item document frequency range
 \end{itemize}
 
-'systems' : $\frac{4}{\log (1)}$, , 'solutions' : $\frac{4}{\log (1)}$, 'minimal' : $\frac{4}{\log (1)}$, 'types' : $\frac{4}{\log (1)}$, 'considered' : $\frac{3}{\log (1)}$, 'set', : $\frac{3}{\log (1)}$, 'set solutions' : $\frac{3}{\log (1)}$, ...
+'systems' : $\frac{4}{74\log (1)}$, , 'solutions' : $\frac{4}{74\log (1)}$, 'minimal' : $\frac{4}{74\log (1)}$, 'types' : $\frac{4}{74\log (1)}$, 'considered' : $\frac{3}{74\log (1)}$, 'set', : $\frac{3}{74\log (1)}$, 'set solutions' : $\frac{3}{74\log (1)}$, ...
 
 \end{frame}
 
@@ -104,7 +118,7 @@ Value = TF * IDF
 'An unsupervised, domain-independent, and language-independent method for extracting keywords from individual documents'
 \vspace{0.5cm}
 
-'The input parameters for RAKE comprise a list of stop words (or stoplist), a set of phrase delimiters, and a set of word delimiters.'
+'The input parameters for RAKE comprise a list of stop words, a set of phrase delimiters, and a set of word delimiters.'
 \end{frame}
 
 \begin{frame}
@@ -143,7 +157,7 @@ minimal generating sets (8.7), linear diophantine equations (8.5), minimal suppo
 \begin{enumerate}
 \item Identify text units that best define the task at hand, and add them as vertices in the graph.
 \item Identify relations that connect such text units, and use these relations to draw edges between vertices in the graph. Edges can be directed or undirected, weighted or unweighted.
-\item Iterate the graph-based ranking algorithm until convergence.
+\item Graph-based ranking algorithm.
 \item Sort vertices based on their final score. Use the values attached to each vertex for ranking/selection decisions.
 \end{enumerate}
 \end{frame}
@@ -159,12 +173,12 @@ Construct co-occurrence relation, two vertices are connected if the words appear
 \begin{center}
 \includegraphics[scale = 0.3]{img/graph}
 \end{center}
-Apply iterative ranking algorithm:
+Apply graph ranking algorithm:
 
 numbers (1.46), inequations (1.45), linear (1.29), diophantine (1.28), upper (0.99), bounds (0.99), strict (0.77), ....
 
 \vspace{0.1in}
-Apply collapsing of keywords to form keyphrases.
+Postprocessing.
 \end{frame}
 
 
