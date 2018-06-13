@@ -1,6 +1,7 @@
 __pycache__
 broken_papers
 papers
+paper_texts
 OpenData
 .ipynb_checkpoints
 *.pdf
