@@ -1,6 +1,13 @@
 # Etymo Workshop
 
-You can download 10000 processed papers and their keywords at
+You can download 243 papers from ArXiv converted
+using pdfminer from 
+[our S3 bucket](https://s3-eu-west-1.amazonaws.com/etymo-workshop/paper_texts.zip) (around 4MB)
+
+If you want, you can also download the original PDFs too from 
+[our S3 bucket](https://s3-eu-west-1.amazonaws.com/etymo-workshop/papers.zip) (around 400MB).
+
+You can download the metadata and keywords of 10000 processed papers at
 [this github repo](https://github.com/EtymoIO/OpenData) or by typing:
 ```sh
 git clone git@github.com:EtymoIO/OpenData.git
