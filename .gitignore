@@ -8,6 +8,7 @@ OpenData
 *.jpg
 !ipython_files/example.txt
 !ipython_files/data/example1.pdf
+!intro_talk/intro.pdf
 
 ### TeX gitignore
 
