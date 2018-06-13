@@ -17,11 +17,6 @@ git clone git@github.com:EtymoIO/OpenData.git
 
 Description of who we are and what we do.
 
-## The data
-
-How to download a bundle of PDFs.
-Brief look at some examples.
-
 ## Text extraction
 
 Main methods of extraction, the main problems and which one looks the best.
@@ -69,3 +64,8 @@ Can we use the author's name?
 ### Deep learning
 
 Deep learning? Object recognition
+
+## The data
+
+How to download a bundle of PDFs.
+Brief look at some examples.
